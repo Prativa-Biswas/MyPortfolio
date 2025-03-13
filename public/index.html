@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../src/myportfolio.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../src/modal-custom-styles.css">
+    <title>Prativa Biswas Portfolio</title>
+    <script src="../src/portfolio.js"></script>
+
+</head>
+<body>
+    <div id="header">
+             <div class="container">
+              <nav>
+                <!-- <img src="/public/assets/Prativalogoo.png" alt="loading unsuccessful" class="logo"> -->
+                <div class="logo">PRATIVA</div>
+
+                <ul id="sidemenu">
+                    <li><a href="#header">Home </a></li>
+                    <li ><a href="#about">About </a></li>
+                    <li ><a href="#services">Services </a></li>
+                    <li ><a href="#project">Portfolio </a></li>
+                    <li ><a href="#contact">Contact </a></li>
+                    <i class="bi bi-x" onclick="closemenu()"></i>
+                </ul>
+                <i class="bi bi-list" onclick="openmenu()"></i>
+              </nav>
+              <div class="header-text">
+                <p>Full Stak Java Developer</p>
+                <h1>Hi, I'm <span>Prativa</span> Biswas <br> From India</h1>
+              </div>
+            </div>
+    </div>
+    <!-- -------------about------------- -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="../public/assets/Prativa-AboutSecImage.JPG" >
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Aspiring Java Developer with 1.4 years of experience in Oracle, SQL, and PL/SQL, and a keen interest in full-stack development. I have professional experience as an Oracle Database Developer, where I designed and optimized database solutions, developed PL/SQL procedures, and ensured efficient data management.</p><br>
+
+                        <p>I have a foundational knowledge of Java, JDBC, Servlets, JSP, and Spring Boot and have applied these skills to build an Online Book Store project, integrating frontend and backend technologies. Currently, I am enhancing my expertise by pursuing a Java Full Stack Development course to strengthen my skills in backend and frontend technologies.</p><br>
+                       
+                        <p>I am eager to transition into a Java Developer or Full Stack Java Developer role, where I can apply my database expertise along with my growing development skills to build efficient and scalable applications. Let’s connect and grow together!</p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Programming Language:</span><br><li>Java</li><li>SQL</li><li>PLSQL</li></li>
+                                <li><span>Web Technologies:</span><br><li>HTML</li><li>CSS</li><li>JavaScript</li></li>
+                                <li><span>Database:</span><br><li>Oracle</li></li>
+                                <li><span>FrameWorks:</span><br><li>Spring Basic</li><li>Spring Boot Basics</li></li>
+                                <li><span>Tools:</span><br><li>VS Code</li><li>Eclispe</li></li>
+
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>Oracle Database Developer</span><br>📍 Rumango Company | April 2022 – August 2023
+                                   <ul class="exp-details">
+                                    <li>Designed, developed, and maintained Oracle PL/SQL procedures, functions, and triggers to support business processes.</li>
+                                    <li>Built databases and table structures for web applications.</li>
+                                    <li>Collaborated with cross-functional teams to deliver high-quality database solutions within established project timelines.</li>
+                                    <li>Established strong working relationships between different departments by effectively communicating database requirements and changes.</li>
+                                    <li>Conducted data migration and transformation processes using SQL scripts and traditional ETL Process.</li>
+                                    <li>Optimized database performance by analyzing and rewriting complex SQL queries, achieving significant improvements in query execution time.</li>
+                                   </ul>
+                                </li>
+                                
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>Bachelor of Technology (B.Tech) in Computer Science & Engineering</span><br>
+                                    📍 Radhakrishna Institute of Technology and Engineering, BPUT University, Odisha | 2018 – 2022 <br>
+                                    Score: 8.86 CGPA
+
+                                </li>
+                                
+                            </ul>
+                        </div>
+                </div>
+                
+            </div>
+
+        </div>
+    </div>
+    <!-- ----------------------Services---------------------- -->
+     <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="bi bi-code-slash"></i>
+                    <h2>Full-Stack Java Development</h2>
+                    <p><ul class="skill-list">
+                        <li>Developing scalable and robust applications using Core Java and Advanced Java.</li>
+                        <li>Implementing server-side logic with JSP, Servlets, and JDBC to handle dynamic content.</li>
+                        <li>Using Spring Core and basic Spring Boot for lightweight and modular backend solutions.</li>
+                        <li>Managing form validation, session handling, and business logic implementation.</li>
+                    </ul></p>
+                    <!-- <a href="#">Learn more</a> -->
+                </div>
+                <div>
+                    <!-- <i class="bi bi-crop"></i> -->
+                    <i class="bi bi-database"></i>
+                    <h2>Database Management</h2>
+                    <p><ul class="skill-list">
+                        <li>Designing and optimizing relational databases using SQL and PL/SQL (Oracle).</li>
+                        <li>Writing efficient queries, stored procedures, functions, and triggers for smooth data operations.</li>
+                        <li>Ensuring data integrity, security, and performance in Oracle and other relational databases.</li>
+                    </ul></p>
+                    <!-- <a href="#">Learn more</a> -->
+                </div>
+                <div>
+                    <!-- <i class="bi bi-app-indicator"></i> -->
+                    <i class="bi bi-globe"></i>
+                    <h2>Web Development</h2>
+                    <p><ul class="skill-list">
+                        <li>Creating responsive and interactive user interfaces with HTML, CSS, and JavaScript.</li>
+                        <li>Enhancing frontend design using CSS frameworks like Bootstrap for better UX.</li>
+                        <li>Integrating web pages with backend logic using JSP and Servlets for dynamic content.</li>
+                    </ul></p>
+                    <!-- <a href="#">Learn more</a> -->
+                </div>
+            </div>
+        </div>
+     </div>
+
+     <!-- ---------------Project-------------- -->
+      <div id="project">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <h3>Online Book Store</h3><br>
+                    <img src="../public/assets/e-book.png" >
+                    <div class="layer">
+                        <h3>Online Book Store</h3>
+                        <p> Developed Online Book Store which is a web-based application designed to provide a seamless platform for users to browse, search, purchase, and manage books online. The system efficiently handles book inventory, order processing, and user authentication to ensure a smooth shopping experience.
+                            </p>
+                        <!-- <a href="#"><i class="bi bi-box-arrow-up-right"></i></a> -->
+                        <a  onclick="openModal()"><i class="bi bi-box-arrow-up-right"  ></i></a>                      
+                   
+
+                        <!-- Modal Container -->
+                                <div id="modal-container">
+                                    <div id="modal">
+                                        <span class="close-btn" onclick="closeModal()">&times;</span>
+                                        <iframe id="modal-frame" src="" width="100%" height="300px"></iframe>
+                                    </div>
+                                </div>
+
+
+                    </div>
+                </div>
+                <div class="work">
+                    <h3>Projects at Rumango Consulting Services Pvt. Ltd. </h3><br>
+                    <img src="../public/assets/prevCompany.jpg" alt="">
+                    <div class="layer">
+                        <h3>Projects at Rumango Consulting Services Pvt. Ltd. </h3>
+                        <p>Worked on ETL and data processing projects, extracting data from the Flexcube environment into Oracle databases via DB links and processing it using pre-defined PL/SQL packages. Additionally, handled Excel data imports, transforming and processing client-provided data to meet business requirements using PL/SQL procedures and packages.
+                            </p>
+                        <!-- <a href="#"><i class="bi bi-box-arrow-up-right "></i></a> -->
+
+                        <a  onclick="openRumanoProject()"><i class="bi bi-box-arrow-up-right"  ></i></a>                      
+
+
+                        <!-- Modal Container -->
+                                <div id="modal-container">
+                                    <div id="modal">
+                                        <span class="close-btn" onclick="closeRumanoProject()">&times;</span>
+                                        <iframe id="modal-frame" src="" width="100%" height="300px"></iframe>
+                                    </div>
+                                </div>
+
+                    </div>
+                </div>
+                <!-- <div class="work">
+                    <img src="/public/assets/ebook-device-library.webp" alt="">
+                    <div class="layer">
+                        <h3>Online Book Store</h3>
+                        <p> •	Technologies Used: Core java, JDBC, Servlets, JSP, Oracle, Tomcat Server, HTML, CSS
+                            •	Developed an online book store application to manage inventory, process orders, and support user authentication.
+                        
+                            </p>
+                        <a href="#"><i class="bi bi-box-arrow-up-right"  ></i></a>    
+
+                    </div>
+                </div> -->
+            </div>
+            <a href="#contact" class="bttn">See More</a>
+        </div>
+      </div>
+      <!-- --------------------Contact-------------------- -->
+       <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                   <h1 class="sub-title">Contact Me</h1>
+                   <p><i class="bi bi-envelope-at-fill"></i>prativa.biswas000@gmail.com</p>
+                   <p><i class="bi bi-telephone-inbound-fill"></i>7077714363</p>
+                   <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/prativa-biswas/" ><i class="bi bi-linkedin"></i></a><span>Linkedin</span>
+                   </div>
+                   <a href="/public/assets/PRATIVA BISWAS resume.pdf" download class="bttn bttn-2">Download Resume</a>
+                </div>
+                <div class="contact-right">
+                   <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="bttn bttn-2"> Submit</button>  
+                </form> 
+                <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &copy;Prativa.<i class="bi bi-suit-heart-fill"></i></p>
+        </div>
+     </div>
+
+     <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwH0QXxYMBTxf65Sue2B8F91OePqWzEWvmp5fDvSbu6viafb_TphHfrk7jpy8T6zLBnEw/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg=document.getElementById("msg");
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {msg.innerHTML= "Message sent successfully"
+             setTimeout(function(){
+                msg.innerHTML=""
+             },1000) 
+             form.reset()  
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+
+</body>
+</html>

@@ -1,0 +1,89 @@
+/* Modal Background */
+#modal-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Ensure modal appears above everything */
+   
+
+}
+
+/* Modal Box */
+#modal {
+    background: linear-gradient(rgba(0,0,0,0.6),#670323);
+    width: 70%; /* Increased width */
+    max-width: 800px; /* Increased max width */
+    height: 70%; /* Increased height */
+    max-height: 700px; /* Increased max height */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    position: relative;
+    padding: 20px;
+    z-index: 1001; /* Higher than modal-container */
+   
+}
+
+/* Close Button */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 5px;
+    font-size: 24px;
+    cursor: pointer;
+    color: rgb(251, 250, 250);
+}
+
+/* iframe Styling */
+#modal-frame {
+    width: 100%;
+    height: 100%; /* Adjusted to fit the new modal size */
+    border: none;
+}
+
+.modal-container h1 {
+    /* color: blue; */
+    color: rgb(185, 185, 8);
+}
+
+/* Modal Content Styling */
+.modal-container h2 {
+    /* color: blue; */
+    color: rgb(127, 169, 43);
+}
+
+.modal-container p {
+    font-size: 16px;
+}
+.modal-container {
+    color: white;
+}
+
+/* -----------------CSS FOR SMALL SCREENS---------------- */
+@media only screen and (max-width: 600px){
+
+    #modal {
+
+        width: 90%; /* Increased width */
+        max-width: 800px; /* Increased max width */
+        height: 60%; /* Increased height */
+        max-height: 500px; 
+        font-size: 10px;
+
+    }
+    .modal-container h1 {
+        font-size: 20px;
+    }
+    .modal-container h2 {
+        font-size: 18px;
+    }
+
+
+}
