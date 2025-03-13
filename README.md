@@ -1,2 +1,3 @@
 # MyPortfolio <br>
-About Me
+My oWn Description <br>
+Prativa Biswas | Java Developer & Full Stack Enthusiast
