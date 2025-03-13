@@ -1,3 +1,3 @@
 # MyPortfolio <br>
-My oWn Description <br>
+My own Description <br>
 Prativa Biswas | Java Developer & Full Stack Enthusiast
